@@ -1,0 +1,109 @@
+<html>
+<head>
+    <title>aflamko</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <section class="container w-75 pt-md-2">
+        <div class="row pt-5">
+            <div class="col-md-6">
+                <input type="text" class="form-control mb-5 bg-transparent text-center text-white" placeholder="Search at all.. " id="allMovies">
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control mb-5 bg-transparent text-center text-white" placeholder="Search at current movies..." id="currentMovies">
+            </div>
+        </div>
+    
+    
+    
+    </section>
+    
+    <section class="container pt-md-5">
+        <div class="row p-5" id="rowData">
+
+        </div>
+    </section>
+
+    <section class="contact container w-75 pt-md-2" id="contactLink">
+        <h2 class="my-5 text-white" >Contact US...</h2>
+            <div class="row py-5">
+                <div class="col-md-6">
+                    <input onkeyup="enbale()" type="text" class="form-control bg-transparent text-center text-white" placeholder="Enter Your Name" id="name">
+                    <div class="alert-danger p-2 d-none" id="name-alert">Your Name isn't valid</div>
+                </div>
+
+                <div class="col-md-6">
+                    <input onkeyup="enbale()" type="email" class="form-control bg-transparent text-center text-white" placeholder="Enter Your Email" id="mail">
+                    <div class="alert-danger p-2 d-none" id="mail-alert">Enter valid email</div>
+                </div>
+
+                <div class="col-md-6">
+                    <input onkeyup="enbale()" type="tel" class="form-control bg-transparent text-center text-white" placeholder="Enter phone number" id="phone">
+                    <div class="alert-danger p-2 d-none" id="phone-alert">Enter valid number</div>
+                </div>  
+
+                 <div class="col-md-6">
+                    <input onkeyup="enbale()"type="text" class="form-control bg-transparent text-center text-white" placeholder="Enter Your Age" id="age">
+                    <div class="alert-danger p-2 d-none" id="age-alert">Enter valid age</div>
+                </div>
+    
+                <div class="col-md-6">
+                    <input onkeyup="enbale()" type="password" class="form-control bg-transparent text-center text-white" placeholder="Password" id="password">
+                    <div class="alert-danger p-2 d-none" id="password-alert">Enter valid password</div>
+                </div>
+
+                <div class="col-md-6">
+                    <input onkeyup="enbale()"type="password" class="form-control bg-transparent text-center text-white" placeholder="Re-Password" id="rePassword">
+                    <div class="alert-danger p-2 d-none" id="repassword-alert">Re-Password correctly </div>
+                </div>
+            </div>
+            <button  type="submit" class="btn btn-outline-success disabled mb-md-5 mb-sm-2" id="submitBtn">Submit</button>
+
+       
+        
+        
+    </section>
+
+    <section class="slider vh-100" >
+        <div class="menu float-start text-white vh-100 d-flex flex-column   justify-content-between"> 
+            <div class="p-3">
+                <ul class="list-unstyled p-3">
+                    <li id="now_playing">Now Playing</li>
+                    <li id="popular">Popular</li>
+                    <li id="trending">Trending</li>
+                    <li id="upcoming">Upcoming</li>
+                    <li ><a href="#contactLink"id="contact" class="text-decoration-none text-white">Contact US</a></li>
+                
+                </ul>
+            </div>
+            <div class="p-2">
+                <div class="mb-3">
+                    <i class="fab fa-facebook-f ms-3 "></i> 
+                    <i class="fab fa-twitter ms-3"></i>
+                    <i class="fas fa-globe ms-3"></i>
+                </div>
+               <p class="text-white-50">Copyright Â© 2019 All Rights Reserved.</p>
+     
+            </div>
+        </div>
+        <div class="toggle vh-100 float-start d-flex flex-column align-items-center  justify-content-between">
+            <img src="logo.png" alt="logo" class="w-50 mt-4">
+            <i class="fas fa-align-justify" id="toggleBtn"></i>
+            <div class="d-flex flex-column align-items-center  justify-content-between mb-4">
+                <i class="fas fa-globe mb-4 " ></i>
+                <i class="fas fa-share-alt"></i>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
